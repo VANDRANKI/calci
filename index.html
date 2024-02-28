@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Background bubbles -->
     <div class="bubbles">
       <span class="one"></span>
       <span class="two"></span>
@@ -47,17 +48,25 @@
       <span class="seven"></span>
       <span class="seven"></span>
     </div>
+        <!-- Calculator container -->
     <div class="container">
+      <!-- Calculator form -->
       <form action="#" name="forms">
+        <!-- Input display for calculation -->
         <input type="text" name="answer" />
+       <!-- Button group for calculator controls -->
         <div class="buttons">
+          <!-- Clear input -->
           <input type="button" value="AC" onclick="forms.answer.value = ''" />
+           <!-- Delete last character -->
           <input
             type="button"
             value="DEL"
             onclick="forms.answer.value = forms.answer.value.substr(0 , forms.answer.value.length -1)"
           />
+           <!-- Percentage -->
           <input type="button" value="%" onclick="forms.answer.value += '%'" />
+           <!-- Division -->
           <input type="button" value="/" onclick="forms.answer.value += '/'" />
         </div>
         <div class="buttons">
@@ -86,6 +95,7 @@
             onclick="forms.answer.value += '00'"
           />
           <input type="button" value="." onclick="forms.answer.value += '.'" />
+          <!-- Calculate result -->
           <input
             type="button"
             value="="
